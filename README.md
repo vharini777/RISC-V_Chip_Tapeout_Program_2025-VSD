@@ -1,7 +1,7 @@
 # RISC-V_Chip_Tapeout_Program_2025-VSD
 Documenting RISC‑V Reference SoC Tapeout Program-VSD
 
-
+---
 
 ## Week 0
 
@@ -26,15 +26,17 @@ Documenting RISC‑V Reference SoC Tapeout Program-VSD
 <details>
 <summary> Task 2: Tools Installation </summary>
 
-### Tools and Commands
-
-#### 1. Oracle VirtualBox
+### Oracle VirtualBox
 - Minimum: 6GB RAM, 50GB HDD, Ubuntu 20.04+, 4 vCPU  
-- ![Oracle VirtualBox](https://i.postimg.cc/MHhPZC1T/Screenshot-2025-09-20-134309.png){: width="300px"}
 
-#### 2. Yosys
+### Linux Tool Setup (Yosys, Icarus Verilog, GTKWave)
+
+#### Yosys
 ```bash
+# Update package lists
 sudo apt-get update
+
+# Install Yosys
 git clone https://github.com/YosysHQ/yosys.git
 cd yosys
 sudo apt install make
@@ -45,3 +47,12 @@ libboost-python-dev libboost-filesystem-dev zlib1g-dev
 make config-gcc
 make
 sudo make install
+cd ..
+
+# Install Icarus Verilog
+sudo apt-get install iverilog
+
+# Install GTKWave
+sudo apt install gtkwave
+
+</details>
