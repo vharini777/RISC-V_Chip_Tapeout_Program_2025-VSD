@@ -1,7 +1,7 @@
 # RISC-V_Chip_Tapeout_Program_2025-VSD
 Documenting RISC‑V Reference SoC Tapeout Program-VSD
 
----
+
 
 ## Week 0
 
@@ -31,7 +31,7 @@ Documenting RISC‑V Reference SoC Tapeout Program-VSD
 
 ### Linux Tool Setup (Yosys, Icarus Verilog, GTKWave)
 
-#### Yosys
+#### Yosys, Icarus Verilog, GTKWave
 ```bash
 # Update package lists
 sudo apt-get update
@@ -55,4 +55,3 @@ sudo apt-get install iverilog
 # Install GTKWave
 sudo apt install gtkwave
 
-</details>
